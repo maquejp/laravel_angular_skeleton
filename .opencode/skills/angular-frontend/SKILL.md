@@ -17,11 +17,11 @@ description: Angular frontend SPA for SaaS. Use when working on components, serv
 - Environment files for API base URLs
 
 ## Key paths
-- `frontend/src/app/` — application code
-- `frontend/src/app/core/` — singleton services, guards, interceptors
-- `frontend/src/app/features/` — lazy-loaded feature modules
-- `frontend/src/app/shared/` — shared components, directives, pipes
-- `frontend/src/environments/` — environment config
+- `application/app/src/app/` — application code
+- `application/app/src/app/core/` — singleton services, guards, interceptors
+- `application/app/src/app/features/` — lazy-loaded feature modules
+- `application/app/src/app/shared/` — shared components, directives, pipes
+- `application/app/src/environments/` — environment config
 
 ## API communication
 - `HttpClient` with interceptors for auth token injection

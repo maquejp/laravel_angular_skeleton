@@ -1,0 +1,43 @@
+{
+  "name": "SaaS App (Laravel + Angular)",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  "forwardPorts": [
+    8080,
+    4200,
+    5432
+  ],
+  "portsAttributes": {
+    "8080": {
+      "label": "Laravel API",
+      "onAutoForward": "notify"
+    },
+    "4200": {
+      "label": "Angular App",
+      "onAutoForward": "notify"
+    },
+    "5432": {
+      "label": "PostgreSQL",
+      "onAutoForward": "silent"
+    }
+  },
+  "postCreateCommand": "cd application/api && composer install && cp .env.example .env && php artisan key:generate",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "bmewburn.vscode-intelephense-client",
+        "angelxmoreno.vscode-blade-formatter",
+        "angular.ng-template",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "editorconfig.editorconfig"
+      ],
+      "settings": {
+        "intelephense.files.maxSize": 5000000,
+        "editor.formatOnSave": true
+      }
+    }
+  },
+  "remoteUser": "vscode"
+}

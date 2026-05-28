@@ -19,12 +19,12 @@ description: Laravel API backend for SaaS. Use when working on routes, controlle
 - Convention: `ModelNameController` → `ModelNameResource` → `StoreModelNameRequest`
 
 ## Key paths
-- `app/Http/Controllers/Api/` — API controllers
-- `app/Http/Requests/` — form requests
-- `app/Http/Resources/` — API resources
-- `app/Models/` — Eloquent models
-- `database/migrations/` — DB migrations
-- `routes/api.php` — API routes
+- `application/api/app/Http/Controllers/Api/` — API controllers
+- `application/api/app/Http/Requests/` — form requests
+- `application/api/app/Http/Resources/` — API resources
+- `application/api/app/Models/` — Eloquent models
+- `application/api/database/migrations/` — DB migrations
+- `application/api/routes/api.php` — API routes
 
 ## Database
 - PostgreSQL, not SQLite/MySQL
