@@ -5,7 +5,7 @@ services:
       dockerfile: Dockerfile
     container_name: saas-app
     ports:
-      - "8080:80"
+      - "8080:8000"
       - "4200:4200"
     volumes:
       - ..:/workspace:cached
@@ -21,7 +21,7 @@ services:
         condition: service_healthy
     networks:
       - saas-network
-    command: sleep infinity
+    command: /workspace/.devcontainer/scripts/start-dev.sh
 
   db:
     image: postgres:16-alpine

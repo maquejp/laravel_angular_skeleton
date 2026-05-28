@@ -22,7 +22,7 @@
       "onAutoForward": "silent"
     }
   },
-  "postCreateCommand": "cd application/api && composer install && cp .env.example .env && php artisan key:generate && curl -fsSL https://opencode.ai/install | bash",
+  "postCreateCommand": "sudo chown -R vscode:vscode . && cd application/api && composer install && cp .env.example .env && php artisan key:generate && (which opencode >/dev/null 2>&1 || curl -fsSL https://opencode.ai/install | bash) && cd /workspace/application/app && npm install",
   "customizations": {
     "vscode": {
       "extensions": [
