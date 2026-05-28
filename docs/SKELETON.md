@@ -70,6 +70,7 @@ Create `.devcontainer/` with:
 - `devcontainer.json`
 - `Dockerfile` (PHP 8.3 + Node 22 + pdo_pgsql)
 - `docker-compose.yml` (app + PostgreSQL 16)
+- `postCreateCommand` installs Composer deps, sets `.env`, generates `APP_KEY`, and installs opencode
 
 ### 9. Create opencode skills & agents
 ```bash
