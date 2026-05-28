@@ -1,3 +1,9 @@
+# Root safety (do not run composer/artisan from root)
+/vendor
+/.env
+/.env.backup
+/.env.production
+
 # Laravel API
 /application/api/.phpunit.cache
 /application/api/node_modules
