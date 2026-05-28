@@ -33,6 +33,10 @@ description: Angular frontend SPA for SaaS. Use when working on components, serv
 - Auth guard on protected routes
 - HTTP interceptor for Authorization header
 
+## Markdown
+All `.md` files must follow the **markdownlint** specification (v0.40.0):
+https://github.com/DavidAnson/markdownlint/blob/v0.40.0/doc/Rules.md
+
 ## Testing
 - Jasmine + Karma for unit tests
 - Use `HttpTestingController` for API mocking

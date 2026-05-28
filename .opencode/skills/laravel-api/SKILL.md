@@ -32,6 +32,10 @@ description: Laravel API backend for SaaS. Use when working on routes, controlle
 - Migrations should be reversible (use `up`/`down`)
 - Use foreign key constraints
 
+## Markdown
+All `.md` files must follow the **markdownlint** specification (v0.40.0):
+https://github.com/DavidAnson/markdownlint/blob/v0.40.0/doc/Rules.md
+
 ## Testing
 - Pest for feature/unit tests
 - Test API endpoints with `actingAs()` for auth

@@ -17,6 +17,20 @@ description: DevOps and infrastructure for this project. Use when working on Doc
 - `php artisan serve` for Laravel
 - `ng serve` for Angular dev server
 
+## Markdown
+All `.md` files must follow the **markdownlint** specification (v0.40.0):
+https://github.com/DavidAnson/markdownlint/blob/v0.40.0/doc/Rules.md
+
+Key rules:
+- MD001 — heading increments exactly one level
+- MD003 — ATX headings (`# ` style)
+- MD012 — no multiple consecutive blank lines
+- MD022 — blanks around headings
+- MD031 — blanks around fenced code blocks
+- MD032 — blanks around lists
+- MD047 — single trailing newline
+- Use `---` for horizontal rules (not `***`)
+
 ## Deployment considerations
 - API subdomain: `api.****` → Laravel
 - App subdomain: `app.****` → Angular (static files or Node SSR)
