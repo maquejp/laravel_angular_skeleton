@@ -5,13 +5,18 @@ description: Laravel API backend for SaaS. Use when working on routes, controlle
 
 # Laravel API (api.****)
 
+See [global principles](../../guides/principles.md) — SOLID, DRY,
+Conventional Commits, etc.
+
 ## Stack
+
 - **Laravel 11** with PHP 8.3
 - **PostgreSQL** database
 - **Laravel Sanctum** for API token/SPA authentication
 - API-only — no Blade views for app UI
 
 ## Conventions
+
 - All routes in `routes/api.php` (prefix `api/`)
 - Use API resource controllers (`php artisan make:controller --api --resource`)
 - Form requests for validation (`php artisan make:request StoreXRequest`)
@@ -19,6 +24,7 @@ description: Laravel API backend for SaaS. Use when working on routes, controlle
 - Convention: `ModelNameController` → `ModelNameResource` → `StoreModelNameRequest`
 
 ## Key paths
+
 - `application/api/app/Http/Controllers/Api/` — API controllers
 - `application/api/app/Http/Requests/` — form requests
 - `application/api/app/Http/Resources/` — API resources
@@ -27,16 +33,18 @@ description: Laravel API backend for SaaS. Use when working on routes, controlle
 - `application/api/routes/api.php` — API routes
 
 ## Database
+
 - PostgreSQL, not SQLite/MySQL
 - Use `pgsql` driver in `.env`
 - Migrations should be reversible (use `up`/`down`)
 - Use foreign key constraints
 
 ## Markdown
-All `.md` files must follow the **markdownlint** specification (v0.40.0):
-https://github.com/DavidAnson/markdownlint/blob/v0.40.0/doc/Rules.md
+
+See [guides/markdown.md](../../guides/markdown.md) — markdownlint v0.40.0 required.
 
 ## Testing
+
 - Pest for feature/unit tests
 - Test API endpoints with `actingAs()` for auth
 - Use `RefreshDatabase` trait
