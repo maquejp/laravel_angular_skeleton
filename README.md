@@ -2,7 +2,7 @@
 
 ## Structure
 
-```
+```text
 .
 ├── application/
 │   ├── api/          Laravel 11 API backend (api.****)
