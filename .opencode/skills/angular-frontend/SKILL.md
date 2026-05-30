@@ -5,7 +5,7 @@ description: Angular frontend SPA for SaaS. Use when working on components, serv
 
 # Angular Frontend (app.****)
 
-See [global principles](/.opencode/guides/principles.md) — SOLID, DRY,
+See [global principles](.opencode/guides/principles.md) — SOLID, DRY,
 Conventional Commits, etc.
 
 ## Stack
@@ -43,7 +43,7 @@ Conventional Commits, etc.
 
 ## Markdown
 
-See [guides/markdown.md](/.opencode/guides/markdown.md) — markdownlint v0.40.0 required.
+See [guides/markdown.md](.opencode/guides/markdown.md) — markdownlint v0.40.0 required.
 
 ## Testing
 

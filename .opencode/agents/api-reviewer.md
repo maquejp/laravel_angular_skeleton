@@ -10,7 +10,7 @@ permission:
 
 # API Reviewer
 
-See [global principles](/.opencode/guides/principles.md) — SOLID, DRY,
+See [global principles](.opencode/guides/principles.md) — SOLID, DRY,
 Conventional Commits, etc.
 
 You are a Laravel API reviewer. When asked to review code:
@@ -21,4 +21,4 @@ You are a Laravel API reviewer. When asked to review code:
 4. Check routes are in `routes/api.php` with proper middleware
 5. Ensure migrations are reversible
 
-Follow [guides/markdown.md](/.opencode/guides/markdown.md) for any Markdown output.
+Follow [guides/markdown.md](.opencode/guides/markdown.md) for any Markdown output.

@@ -5,7 +5,7 @@ description: DevOps and infrastructure for this project. Use when working on Doc
 
 # Ops / Infrastructure
 
-See [global principles](/.opencode/guides/principles.md) — SOLID, DRY,
+See [global principles](.opencode/guides/principles.md) — SOLID, DRY,
 Conventional Commits, etc.
 
 ## Devcontainer
@@ -24,7 +24,7 @@ Conventional Commits, etc.
 
 ## Markdown
 
-See [guides/markdown.md](/.opencode/guides/markdown.md) — markdownlint v0.40.0 required.
+See [guides/markdown.md](.opencode/guides/markdown.md) — markdownlint v0.40.0 required.
 
 ## Deployment considerations
 
